@@ -1,0 +1,72 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    <style>
+        .sem_botton {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 50%;
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .sem_botton a:link,
+        .sem_botton a:visited {
+            background-color: rgba(16, 232, 12, 0.249);
+            color: black;
+            border: 2px solid rgb(20, 179, 20);
+            border-radius: 4px;
+            padding: 10px 50px;
+            margin: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+        .sem_botton a:hover,
+        .sem_botton a:active {
+            background-color: green;
+            color: white;
+        }
+    </style>
+
+    {% endblock %}
+    <title>Document</title>
+</head>
+
+<body>
+
+    {% block content %}
+    <a href="logout" id="right_a" class="logout">logout</a>
+    {% endblock %}
+
+    {% block sem %}
+    <div class="sem_botton">
+        <a href="sem1">Semester 1</a>
+        <a href="sem2">Semester 2</a>
+        <a href="sem3">Semester 3</a>
+        <a href="sem4">Semester 4</a>
+        <a href="sem5">Semester 5</a>
+        <a href="sem6">Semester 6</a>
+        <a href="sem7">Semester 7</a>
+        <a href="sem8">Semester 8</a>
+    </div>
+
+
+    {% endblock %}
+    <!-- <a href="login">Login</a><br>
+    <a href="sign_up">Sign Up</a><br> -->
+
+</body>
+
+</html>

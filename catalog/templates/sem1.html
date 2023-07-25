@@ -1,0 +1,161 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {% block content %}
+    <a href="logout" id="right_a" class="logout">logout</a>
+    {% endblock %}
+
+    {% block sem %}
+    <div class="marks_container">
+        <h1>First Term Marks</h1>
+        <table>
+            <tr>
+                <th>{{subjects.0}}</th>
+                <th>{{subjects.1}}</th>
+                <th>{{subjects.2}}</th>
+            </tr>
+            <tr>
+                <td>{{subjectt11.0}}</td>
+                <td>{{subjectt11.1}}</td>
+                <td>{{subjectt11.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt12.0}}</td>
+                <td>{{subjectt12.1}}</td>
+                <td>{{subjectt12.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt13.0}}</td>
+                <td>{{subjectt13.1}}</td>
+                <td>{{subjectt13.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt14.0}}</td>
+                <td>{{subjectt14.1}}</td>
+                <td>{{subjectt14.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt15.0}}</td>
+                <td>{{subjectt15.1}}</td>
+                <td>{{subjectt15.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt16.0}}</td>
+                <td>{{subjectt16.1}}</td>
+                <td>{{subjectt16.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt17.0}}</td>
+                <td>{{subjectt17.1}}</td>
+                <td>{{subjectt17.2}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="marks_container">
+        <h1>Second Term Marks</h1>
+        <table>
+            <tr>
+                <th>{{subjects.0}}</th>
+                <th>{{subjects.1}}</th>
+                <th>{{subjects.2}}</th>
+            </tr>
+            <tr>
+                <td>{{subjectt21.0}}</td>
+                <td>{{subjectt21.1}}</td>
+                <td>{{subjectt21.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt22.0}}</td>
+                <td>{{subjectt22.1}}</td>
+                <td>{{subjectt22.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt23.0}}</td>
+                <td>{{subjectt23.1}}</td>
+                <td>{{subjectt23.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt24.0}}</td>
+                <td>{{subjectt24.1}}</td>
+                <td>{{subjectt24.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt25.0}}</td>
+                <td>{{subjectt25.1}}</td>
+                <td>{{subjectt25.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt26.0}}</td>
+                <td>{{subjectt26.1}}</td>
+                <td>{{subjectt26.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectt27.0}}</td>
+                <td>{{subjectt27.1}}</td>
+                <td>{{subjectt27.2}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="marks_container">
+        <h1>Final Exam Marks</h1>
+        <table>
+            <tr>
+                <th>{{subjects.0}}</th>
+                <th>{{subjects.1}}</th>
+                <th>{{subjects.2}}</th>
+            </tr>
+            <tr>
+                <td>{{subjectfinal1.0}}</td>
+                <td>{{subjectfinal1.1}}</td>
+                <td>{{subjectfinal1.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectfinal2.0}}</td>
+                <td>{{subjectfinal2.1}}</td>
+                <td>{{subjectfinal2.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectfinal3.0}}</td>
+                <td>{{subjectfinal3.1}}</td>
+                <td>{{subjectfinal3.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectfinal4.0}}</td>
+                <td>{{subjectfinal4.1}}</td>
+                <td>{{subjectfinal4.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectfinal5.0}}</td>
+                <td>{{subjectfinal5.1}}</td>
+                <td>{{subjectfinal5.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectfinal6.0}}</td>
+                <td>{{subjectfinal6.1}}</td>
+                <td>{{subjectfinal6.2}}</td>
+            </tr>
+            <tr>
+                <td>{{subjectfinal7.0}}</td>
+                <td>{{subjectfinal7.1}}</td>
+                <td>{{subjectfinal7.2}}</td>
+            </tr>
+        </table>
+    </div>
+    {% endblock %}
+    <!-- <a href="login">Login</a><br>
+    <a href="sign_up">Sign Up</a><br> -->
+
+</body>
+
+</html>

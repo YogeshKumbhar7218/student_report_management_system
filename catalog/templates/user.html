@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sidenav.css' %}" />
+<style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-color: #f8f9ff;
+        background-image: url("{% static 'img/home.jpg' %}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+</style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+
+        <div class="topnav">
+            <!-- <a class="active" href="#home">Home</a> -->
+            <span onclick="openNav()">&#9776; Student Info</span>
+            <a href="logout" id="right_a" class="logout">logout</a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="result">Results</a>
+            <a href="extra_activities">Extra Activities</a>
+            <a href="#">Contact</a>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+    </body>
+</body>
+
+</html>
